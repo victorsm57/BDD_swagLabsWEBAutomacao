@@ -1,6 +1,6 @@
-@smoke
 Feature: Testar a funcionalidade de Login
 
+  @smoke
   Scenario Outline: Checar se o login é bem sucedido com credenciais válidas
 
     Given o usuário está na página de Login
@@ -15,6 +15,7 @@ Feature: Testar a funcionalidade de Login
       | problem_user | secret_sauce |
 
 
+    @regression
     Scenario Outline: Checar se o login é negado com credenciais inválidas
 
       Given o usuário inválido está na página de Login
