@@ -7,9 +7,8 @@ import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v85.log.Log;
-import páginas.HomePage;
-import páginas.LoginPage;
+import LoginSteps_pages.HomePage;
+import LoginSteps_pages.LoginPage;
 
 import java.time.Duration;
 
