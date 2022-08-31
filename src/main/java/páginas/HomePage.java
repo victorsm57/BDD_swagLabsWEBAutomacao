@@ -11,6 +11,8 @@ public class HomePage {
 
     @FindBy(className = "title")
     WebElement homePageTitle;
+    @FindBy(xpath = "//*[@id=\"login_button_container\"]/div/form/div[3]/h3")
+    WebElement errorMessage;
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -18,6 +20,10 @@ public class HomePage {
     }
     public String páginaInicial(){
         return homePageTitle.getText();
+    }
+
+    public String errorLogin(){
+        return errorMessage.getText();
     }
 
 }
