@@ -1,4 +1,4 @@
-package páginas.LoginTestPages;
+package páginas;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,8 +20,8 @@ public class LoginPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    public LoginPage preenhcerUsuario(String user){
-        inputUser.sendKeys(user);
+    public LoginPage preenhcerUsuario(String username){
+        inputUser.sendKeys(username);
         return this;
     }
     public LoginPage preencherSenha(String password){
